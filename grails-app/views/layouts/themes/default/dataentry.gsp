@@ -3,10 +3,21 @@
     <theme:head/>
     <theme:body>
         <div class="container">
+            <theme:template name="navigation"/>
             <div class="page-header"><h1><g:layoutTitle default="Untitled"/></h1></div>
             <div class="row">
                 <div class="span-16 columns">
+                    <theme:layoutZone name="actions"/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="span-16 columns">
                     <theme:layoutZone name="body"/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="span-16 columns">
+                    <theme:layoutZone name="actions"/>
                 </div>
             </div>
             <div class="row" id="footer">

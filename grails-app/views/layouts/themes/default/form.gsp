@@ -3,7 +3,12 @@
     <theme:head/>
     <theme:body>
         <div class="container">
-            <theme:layoutZone name="body"/>
+                <div class="span8 columns">
+                    <div class="modal">
+                        <theme:layoutZone name="body"/>
+                    </div>
+                </div>
+            </div>
         </div>
     </theme:body>
 </g:html>
