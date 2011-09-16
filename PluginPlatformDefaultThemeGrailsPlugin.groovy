@@ -4,7 +4,7 @@ class PluginPlatformDefaultThemeGrailsPlugin {
     // the version or versions of Grails the plugin is designed for
     def grailsVersion = "1.3 > *"
     // the other plugins this plugin depends on
-    def dependsOn = [pluginPlatform:'1.0 > *']
+    def dependsOn = [:]
     
     // resources that are excluded from plugin packaging
     def pluginExcludes = [
