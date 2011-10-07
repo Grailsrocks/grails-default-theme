@@ -1,0 +1,3 @@
+<g:if test="${kind == 'button'}"><button class="button${classes}" ${ui.attributes()}${!enabled ? ' disabled="y"' : ''}>${body.encodeAsHTML()}</button></g:if>
+<g:elseif test="${kind == 'anchor'}"><a class="text_button_padding link_button${classes}" ${ui.attributes()}${!enabled ? ' disabled="y"' : ''}>${body.encodeAsHTML()}</a></g:elseif>
+<g:elseif test="${kind == 'submit'}"><input type="submit" class="button${classes}" value="${body.encodeAsHTML().encodeAsURL()}" ${ui.attributes()}${!enabled ? ' disabled="y"' : ''}/></g:elseif>

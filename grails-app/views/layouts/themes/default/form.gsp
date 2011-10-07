@@ -2,9 +2,11 @@
 <g:html>
     <theme:head/>
     <theme:body>
-        <div class="container">
-                <div class="span8 columns">
-                    <div class="modal">
+        <div id="box">
+            <div class="block">
+                <h2><g:layoutTitle default='Untitled'/></h2>
+                <div class="content">
+                    <div class="inner">
                         <theme:layoutZone name="body"/>
                     </div>
                 </div>

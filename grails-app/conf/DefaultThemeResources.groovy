@@ -1,5 +1,6 @@
 modules = {
     'theme.default' {
-        resource url:[plugin:'plugin-platform-default-theme', dir:'css', file:'twitter-bootstrap-1.2.0.css'], type:'css', nominify: true
+        resource url:[plugin:'default-theme', dir:'css', file:'base.css'], nominify: true
+        resource url:[plugin:'default-theme', dir:'css', file:'themes/default/style.css'], nominify: true
     }
 }

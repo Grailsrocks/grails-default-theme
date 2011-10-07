@@ -1,3 +1,4 @@
+
 <g:html>
     <theme:head/>
     <theme:body>
@@ -17,6 +18,9 @@
                         </div>
                     </div>
                     <theme:layoutTemplate name="footer"/>
+                </div>
+                <div id="sidebar">
+                    <theme:layoutZone name="sidebar"/>
                 </div>
             </div>
         </div>

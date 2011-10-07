@@ -1,10 +1,10 @@
-class PluginPlatformDefaultThemeGrailsPlugin {
+class DefaultThemeGrailsPlugin {
     // the plugin version
     def version = "1.0.BUILD-SNAPSHOT"
     // the version or versions of Grails the plugin is designed for
     def grailsVersion = "1.3 > *"
     // the other plugins this plugin depends on
-    def dependsOn = [:]
+    def dependsOn = [pluginPlatform:'1.0 > *']
     
     // resources that are excluded from plugin packaging
     def pluginExcludes = [
@@ -18,21 +18,11 @@ class PluginPlatformDefaultThemeGrailsPlugin {
 The default theme for use with the plugin platform Theme API
 '''
 
-    def documentation = "http://grails.org/plugin/plugin-platform-default-theme"
+    def documentation = "http://grails.org/plugin/default-theme"
     
     def doWithConfig = { config ->
         application {
-            if (config.grails.containsKey(themes)) {
-                grails.themes << 'default'
-            } else {
-                grails.themes = ['default']
-            }
-            
-            grails.theme.'default'.layout.mapping.form = 'form'
-            grails.theme.'default'.layout.mapping.report = 'report'
-            grails.theme.'default'.layout.mapping.dataentry = 'dataentry'
-            grails.theme.'default'.layout.mapping.main = 'main'
-
+            grails.themes.default.ui.actions.cssClass = 'group navform wat-cf'
         }
     }
 }

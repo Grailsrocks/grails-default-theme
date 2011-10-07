@@ -1,0 +1,1 @@
+<theme:layoutZone name="footer"/>
